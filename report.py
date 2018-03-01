@@ -13,10 +13,9 @@ class Report(object):
         session = OAuth2Session(token=token)
         response = session.get(path).json()
         return Report(response)
-
     def __init__(self, data):
         self._data = data
-
+        
     @property
     def phenotype(self):
         return self._data['phenotype']

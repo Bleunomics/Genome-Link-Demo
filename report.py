@@ -1,7 +1,6 @@
 from requests_oauthlib import OAuth2Session
 from genomelink import api_base
 
-
 class Report(object):
     @staticmethod
     def fetch(name, population, token=''):
